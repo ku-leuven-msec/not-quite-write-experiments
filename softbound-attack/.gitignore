@@ -1,0 +1,16 @@
+*
+!.gitignore
+!LICENSE
+!SOFTBOUNDLICENSE
+!*.md
+
+!Makefile
+!*.c
+!*.cpp
+!*.h
+
+!attack
+!softboundcets-lib
+!softboundcets-llvm-clang34/
+!softboundcets-llvm-clang34/*
+!softboundcets-llvm-clang34/**
