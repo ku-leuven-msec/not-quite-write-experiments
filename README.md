@@ -1,5 +1,7 @@
 # Not Quite Write - Experiments
 
+This repo contains the source code and raw results of the experiments we did for our WOOT'24 paper: [Not Quite Write: On the Effectiveness of Store-Only Bounds Checking](https://adriaanjacobs.github.io/files/woot24notquitewrite.pdf). 
+
 ## Store-only bypass on SoftBound
 The relevant sources are under [softbound-attack](/softbound-attack/). 
 ```bash
@@ -92,3 +94,11 @@ What is your updated age? 3
 Launching shell for admin:
 $ 
 ```
+
+## Large-scale feasibility evaluation on 1,000 GitHub repos using CodeQL
+The CodeQL queries and raw results are in the [codeql-queries/](/codeql-queries/) directory. The format of the result CSVs is as follows:
+```csv
+<benchmark name>, <total lines of C/C++ code>, <number of hits for the query>
+```
+
+We used a mix of GitHub Actions and on-prem servers to run the queries. In total, analyzing all 1,000 repos took well over 70h across two 24-core servers. 
